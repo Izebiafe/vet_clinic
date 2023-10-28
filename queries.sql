@@ -66,8 +66,8 @@ WHERE o.full_name = 'Melody Pond';
 
 
 --     List of all animals that are pokemon (their type is Pokemon).
---     List all owners and their animals, remember to include those that don't own any animal.
---     How many animals are there per species?
---     List all Digimon owned by Jennifer Orwell.
---     List all animals owned by Dean Winchester that haven't tried to escape.
---     Who owns the most animals?
+
+SELECT a.name
+FROM animals a
+JOIN species s ON a.species_id = s.id
+WHERE s.name = 'Pokemon';
