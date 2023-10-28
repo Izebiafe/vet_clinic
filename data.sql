@@ -80,3 +80,7 @@ VALUES
     --  Vet William Tatcher is specialized in Pokemon.
     INSERT INTO specializations (vet_id, species_id)
     VALUES ((SELECT id FROM vets WHERE name = 'William Tatcher'), 1);
+
+   --  Vet Stephanie Mendez is specialized in Digimon and Pokemon.
+    INSERT INTO specializations (vet_id, species_id)
+    VALUES ((SELECT id FROM vets WHERE name = 'Stephanie Mendez'), 2);
